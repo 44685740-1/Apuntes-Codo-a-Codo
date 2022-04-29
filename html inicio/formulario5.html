@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Formulario de presupuesto viaje</p>
+
+    <br>
+    <form action="https://formspree.io/f/myylbbpg" method="POST">
+        <br>
+        <label for="nomb">Nombre:</label>
+        <input type="text" name="nombre" id="nomb" placeholder="Ingrese su nombre aquí" required>
+
+        <br><br>
+        <label for="ape">Apellido:</label>
+        <input type="text" id="ape" name="apellido" required>
+
+        <br><br>
+        <label for="pwd">Contraseña:</label>
+        <input type="password" name="password" id="pwd" required>
+
+        <br><br>
+        <label for="fechaViaje">Fecha de Viaje:</label>
+        <input type="date" name="fechaViaje" id="fechaViaje" required>
+
+        <br><br>
+        <label for="obser">Observaciones</label>
+        <br>
+        <textarea name="observaciones" id="obser" cols="100" rows="5"></textarea>
+
+        <br><br>
+        <label for="prov">Seleccione la provincia de destino:</label>
+        <br>
+        <select name="provincia" id="prov">
+            <option aria-placeholder="" default hidden>-- Seleccione --</option>
+            <option value="1">Mendoza</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Misiones</option>
+            <option value="4">Bariloche</option>
+        </select>
+
+        <br><br>
+        <label for="">Seleccione el més en el que desea viajar:</label>
+        <br><input type="radio" name="mes" id="1">Enero
+        <br><input type="radio" name="mes" id="2">Febrero
+        <br><input type="radio" name="mes" id="3">Marzo
+        <br><input type="radio" name="mes" id="4">Abril
+        <br><input type="radio" name="mes" id="5">Mayo
+        <br><input type="radio" name="mes" id="6">Junio
+        <br><input type="radio" name="mes" id="7">Julio
+        <br><input type="radio" name="mes" id="8">Agosto
+        <br><input type="radio" name="mes" id="9">Setiembre
+        <br><input type="radio" name="mes" id="10">Octubre
+        <br><input type="radio" name="mes" id="11">Noviembre
+        <br><input type="radio" name="mes" id="12">Diciembre
+
+        <!-- pattern -->
+        <br><br>
+        <label for="codPostal">Código POstal</label>
+        <input type="text" id="codPostal" name="codPostal"  pattern=".{4,}" title="Debe ingresar más de 4 números" required>
+
+        <br><br>
+        <label for="">Seleccione las mascotas con las que viajará:</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="1">Perro
+        <br>
+        <input type="checkbox" name="mascota2" value="2">Gato
+        <br>
+        <input type="checkbox" name="mascota3" value="3">Pájaro
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <br>
+        <input type="reset" value="Limpiar">
+    </form>
+
+    
+</body>
+</html>

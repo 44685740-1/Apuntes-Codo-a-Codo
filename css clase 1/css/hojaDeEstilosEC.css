@@ -1,0 +1,31 @@
+h3 {
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+p {
+    color: gray;
+}
+
+a {
+    color: red;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+}
+
+.textoAzul {
+    color: blue;
+}
+
+.textoRojo {
+    color: red;
+}
+
+.msjAlerta {
+    color: black;
+    background-color: red;
+    font-size: larger;
+}

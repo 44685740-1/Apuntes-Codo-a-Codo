@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>---------- Form get ----------------</h1>
+    <p>Formulario de permiso de viaje</p>
+
+    <br>
+    <form action="viajes/procesarSolViaje.html" method="get">
+        <br>
+        <label for="nom">Nombre:</label>
+        <input type="text" name="nombre" id="nom" placeholder="Ingrese su nombre" title="Ingrese un nombre" required>
+
+        <br><br>
+        <label for="ape">Apellido:</label>
+        <input type="text" name="apellido" id="ape" placeholder="Ingrese su apellido" required>
+
+        <br><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass" required>
+
+        <br><br>
+        <label for="fechaViaje">Fecha de Viaje:</label>
+        <input type="date" name="fechaViaje" id="fechaViaje">
+
+        <br><br>
+        <label for="obser">Observaciones</label>
+        <br>
+        <textarea name="observaciones" id="obser" cols="100" rows="5" maxlength="20"></textarea>
+
+        <br><br>
+        <label for="prov">¿A que provincia viajará?</label>
+        <br>
+        <select name="provincia" id="prov" >
+            <option aria-placeholder="" default hidden>-- Seleccione una provincia --</option>
+            <option value="1">Mendoza</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Bariloche</option>
+            <option value="4">Córdoba</option>
+            <option value="5">Jujuy</option>
+        </select>
+
+        <br><br>
+        <label for="mes">¿En que més desea viajar?</label>
+        <br><input type="radio" name="mes" value="1">Enero
+        <br><input type="radio" name="mes" value="2">Febrero
+        <br><input type="radio" name="mes" value="3">Marzo
+        <br><input type="radio" name="mes" value="4">Abril
+        <br><input type="radio" name="mes" value="5">Mayo
+        <br><input type="radio" name="mes" value="6">Junio
+        <br><input type="radio" name="mes" value="7">Enero
+        <br><input type="radio" name="mes" value="8">Enero
+        <br><input type="radio" name="mes" value="9">Enero
+        <br><input type="radio" name="mes" value="10">Enero
+        <br><input type="radio" name="mes" value="11">Enero
+        <br><input type="radio" name="mes" value="12">Enero
+
+        <br><br>
+        <label for="">¿Que mascotas llevás?</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="1">Perro
+        <br>
+        <input type="checkbox" name="mascota2" value="2">Gato
+        <br>
+        <input type="checkbox" name="mascota3" value="3">Pájaro        
+
+        <!-- pattern -->
+        <br><br>
+        <label for="codigoPostal">Código Postal</label>
+        <input type="text" id="codigoPostal" name="codigoPostal" pattern=".{4}" title="Ingrese 4 números" required>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+        
+    </form>
+
+
+    <h1>---------- Form post ----------------</h1>
+    <p>Formulario de permiso de viaje</p>
+
+    <br>
+    <form action="https://formspree.io/f/xvolqwvn" method="post">
+        <br>
+        <label for="nom">Nombre:</label>
+        <input type="text" name="nombre" id="nom" placeholder="Ingrese su nombre" title="Ingrese un nombre" required>
+
+        <br><br>
+        <label for="ape">Apellido:</label>
+        <input type="text" name="apellido" id="ape" placeholder="Ingrese su apellido" required>
+
+        <br><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass" required>
+
+        <br><br>
+        <label for="fechaViaje">Fecha de Viaje:</label>
+        <input type="date" name="fechaViaje" id="fechaViaje">
+
+        <br><br>
+        <label for="obser">Observaciones</label>
+        <br>
+        <textarea name="observaciones" id="obser" cols="100" rows="5" maxlength="20"></textarea>
+
+        <br><br>
+        <label for="prov">¿A que provincia viajará?</label>
+        <br>
+        <select name="provincia" id="prov" >
+            <option aria-placeholder="" default hidden>-- Seleccione una provincia --</option>
+            <option value="1">Mendoza</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Bariloche</option>
+            <option value="4">Córdoba</option>
+            <option value="5">Jujuy</option>
+        </select>
+
+        <br><br>
+        <label for="mes">¿En que més desea viajar?</label>
+        <br><input type="radio" name="mes" value="1">Enero
+        <br><input type="radio" name="mes" value="2">Febrero
+        <br><input type="radio" name="mes" value="3">Marzo
+        <br><input type="radio" name="mes" value="4">Abril
+        <br><input type="radio" name="mes" value="5">Mayo
+        <br><input type="radio" name="mes" value="6">Junio
+        <br><input type="radio" name="mes" value="7">Enero
+        <br><input type="radio" name="mes" value="8">Enero
+        <br><input type="radio" name="mes" value="9">Enero
+        <br><input type="radio" name="mes" value="10">Enero
+        <br><input type="radio" name="mes" value="11">Enero
+        <br><input type="radio" name="mes" value="12">Enero
+
+        <br><br>
+        <label for="">¿Que mascotas llevás?</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="1">Perro
+        <br>
+        <input type="checkbox" name="mascota2" value="2">Gato
+        <br>
+        <input type="checkbox" name="mascota3" value="3">Pájaro        
+
+        <!-- pattern -->
+        <br><br>
+        <label for="codigoPostal">Código Postal</label>
+        <input type="text" id="codigoPostal" name="codigoPostal" pattern=".{4}" title="Ingrese 4 números" required>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+        
+    </form>     
+    
+</body>
+</html>

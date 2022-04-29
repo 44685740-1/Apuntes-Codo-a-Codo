@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Formulario solicitud de viaje</p>
+
+    <!-- Formulario de ingreso de datos de viaje -->
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre aquí" required>
+
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido aquí" required>
+
+        <br><br>
+        <label for="contra">Contraseña</label>
+        <input type="password" name="pass" id="contra" required>
+
+        <br><br>
+        <label for="fechaViaje">Fecha de Viaje:</label>
+        <input type="date" name="fechaViaje" id="fechaViaje" required>
+
+        <br><br>
+        <label for="observacion">Observaciones</label>
+        <br>
+        <textarea name="observacion" id="observacion" cols="100" rows="6"></textarea>
+
+        <br><br>
+        <label for="provincia">Seleccione una provincia:</label>
+        <br>
+        <select name="provincia" id="provincia">
+            <option aria-placeholder="" default hidden>-- Seleccione una provincia --</option>            <option value="1">Mendoza</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">San Juan</option>
+            <option value="4">Bariloche</option>
+        </select>
+
+
+
+        <br><br>
+        <label for="">Seleccione el mes en que desea viajar:</label>
+        <br><input type="radio" name="mes" value="1">Enero
+        <br><input type="radio" name="mes" value="2">Febrero
+        <br><input type="radio" name="mes" value="3">Marzo
+        <br><input type="radio" name="mes" value="4">Abril
+        <br><input type="radio" name="mes" value="5">Mayo
+        <br><input type="radio" name="mes" value="6">Junio
+        <br><input type="radio" name="mes" value="7">Julio
+        <br><input type="radio" name="mes" value="8">Agosto
+        <br><input type="radio" name="mes" value="9">Setiembre
+        <br><input type="radio" name="mes" value="10">Octubre
+        <br><input type="radio" name="mes" value="11">Noviembre
+        <br><input type="radio" name="mes" value="12">Diciembre
+
+        <br><br>
+        <label for="">Seleccione mascota:</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="1">Perro
+        <br>
+        <input type="checkbox" name="mascota2" value="2">Gato
+        <br>
+        <input type="checkbox" name="mascota3" value="3">Pájaro
+
+
+
+        <!-- pattern -->
+        <br><br>
+        <label for="codigoPostal">Código Postal:</label>
+        <input type="text" id="codigoPostal" name="codigoPOstal"  pattern="[A-Za-z]{3}" >
+
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+        
+
+
+
+        <!-- todo: poner un select con provincias y ciudad -->
+</form>
+    
+</body>
+</html>

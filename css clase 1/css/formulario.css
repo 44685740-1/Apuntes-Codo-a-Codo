@@ -1,0 +1,16 @@
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-style: italic;
+}
+
+.boton {
+    background-color: rebeccapurple;
+}

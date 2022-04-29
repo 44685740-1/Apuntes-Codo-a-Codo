@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2 - Clase 1 - HTML</title>
+</head>
+
+<body>
+    <p>Formulario de solicitud de viaje</p>
+
+    <!-- todo - ssanchez: hacer un formulario para permiso de viaje  -->
+    <!-- los inputs que quiero enviar deben estar dentro de la etiqueta form -->
+    <form action="https://formspree.io/f/myylbbpg" method="POST">
+        <label for="nombre">Nombre: </label>
+        <!-- llega al archivo destino una variable nombre=Pepe -->
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autocomplete="on">
+        
+        <br><br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+
+        <br><br>
+        <label for="contrasenia">Contraseña: </label>
+        <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese su contraseña">
+
+        <br><br>
+        <label for="fechaViaje">Fecha de viaje:</label>
+        <input type="date" name="fechaViaje" id="fechaViaje">
+
+        <br><br>
+        <label for="">Observaciones: </label>
+        <br>
+        <textarea name="observaciones" cols="50" rows="10" placeholder="Ingrese las observaciones"></textarea>
+
+        <br><br>
+        <label for="provincia">Seleccione provincia de destino:</label>
+        <br>
+        <select name="provincia" id="provincia" >
+            <!-- es buena práctica de programación poner value en mayusculas, sin espacios 
+                ni carateres especiales -->
+            <option aria-placeholder="" default hidden>--Seleccione una provincia--</option>
+            <option value="BUENOS_AIRES">Buenos Aires</option>
+            <option value="MENDOZA">Mendoza</option>
+            <option value="STGO_ESTERO">Santiago del Estero</option>
+            <option value="JUJUY">Jujuy</option>
+            <option value="SALTA">Salta</option>
+            <option value="BARIOLOCHE">Bariloche</option>
+        </select>
+        
+        <br><br>
+        <label for="">Seleccione el mes que desea viajar:</label>
+        <br>
+        <input type="radio" name="mes" value="ENERO">Enero
+        <br>
+        <input type="radio" name="mes" value="FEBRERO">Febrero
+        <br>
+        <input type="radio" name="mes" value="MARZO">Marzo
+        <br>
+        <input type="radio" name="mes" value="ABRIL">Abril
+        <br>
+        <input type="radio" name="mes" value="MAYO">Mayo
+        <br>
+        <input type="radio" name="mes" value="JUNIO">Junio
+        <br>
+        <input type="radio" name="mes" value="JULIO">Julio
+        <br>
+        <input type="radio" name="mes" value="AGOSTO">Agosto
+        <br>
+        <input type="radio" name="mes" value="SETIEMBRE">Setiembre
+        <br>
+        <input type="radio" name="mes" value="OCTUBRE">Octubre
+        <br>
+        <input type="radio" name="mes" value="NOVIEMBRE">Noviembre
+        <br>
+        <input type="radio" name="mes" value="DICIEMBRE">Diciembre
+
+        <br><br>
+        <label for="">Seleccione con que mascotas viajará:</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="PERRO">Perro 
+        <br>
+        <input type="checkbox" name="mascota2" value="GATO">Gato
+        <br>
+        <input type="checkbox" name="mascota3" value="VIBORA">Víbora
+
+        <!-- dentro del mismo form ponemos los botones para enviarlo o borrarlo -->
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+
+
+/* ? --- --- --- --- Enlaces --- --- --- --- */
+
+.enlace:active {
+	background-color: #000;
+}
+
+.enlace:visited {
+	color: #b1b;
+}
+
+.enlace:link {
+	color: aqua;
+}
+
+.enlace:hover {
+	color: blueviolet;
+}
+
+/* ? --- --- --- --- --- --- --- --- */
+
+
+/* ? --- --- --- --- parafos hijos --- --- --- --- */
+/* sin necesidad de usar clases */
+.parrafos p:first-child {
+	background-color: #3860EC;
+}
+
+.parrafos p:last-child {
+	background-color: lightcoral;
+}
+
+/* ? --- --- --- --- elementos first of type--- --- --- --- */
+.elementos p:first-of-type {
+	background-color: #3860EC;
+}
+
+.elementos p:last-of-type {
+	background-color: #b1b;
+}
+
+.elementos span:first-of-type {
+	background-color: brown;
+}
+
+
+/* ? --- --- --- --- nth child nos permite elegir a que elemnto le aplicamos estilo --- --- --- --- */
+/*
+.lista :nth-child(3) {
+	background-color: chartreuse;
+}
+*/
+/* impar y par para lograr el efecto */
+
+.lista :nth-child(odd) {
+	background-color: #3860EC;
+}
+
+.lista :nth-child(even) {
+	background-color: #b1b;
+}
+
+/* cada tres elementos aplica estilo    n= elemnto   */
+
+.lista :nth-child(3n) {
+	background-color: #0f0;
+}
+
+/* para que empieze a contar de atras hacia adelante */
+
+.lista :nth-last-child(3) {
+	background-color: #000;
+}
+
+/* ? --- --- --- --- nth of type / nth last of type (combinacio entre las dos que vimos antes) --- --- --- --- */
+
+/* seleccione el segunto parrafop, no el segundo elemento */ 
+.lista2 p:nth-of-type(2) {
+	background-color: #3860EC;
+}
+
+.lista2 div:nth-last-of-type(2) {
+	background-color: #0f0;
+}
+
+/* only child */
+
+.lista3 p:only-child {
+	background-color: #b1b;
+}
+
+/* only of type */
+
+.lista4 p:only-of-type {
+	background-color: aqua;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Formulario datos personales</p>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern=".{2,40}" title="Debe tener más de 2 dígitos y menos de 30" required>
+
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" pattern=".{2,50}" title="Debe tener más de 2 dígitos y menos de 40" required>
+
+        <br><br>
+        <label for="dni">DNI:</label>
+        <input type="number" name="dni" id="dni" required>
+
+        <br><br>
+        <label for="fechaNac">Fecha de Nacimiento:</label>
+        <input type="date" name="fechaNac" id="fechaNac"  required >   
+        
+        <br><br>
+        <label for="fotoDNI">Foto DNI (frente y dorso):</label>
+        <input type="file" name="fotoDNI" id="fotoDNI" multiple accept=".pdf"> 
+
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+        <br><br>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" name="tel" id="tel" pattern=".{6,20}">
+
+
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

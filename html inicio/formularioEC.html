@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2 - Clase 1 - Formularios</title>
+</head>
+
+<body>
+    <p>Bienvenidos a nuestro primer formulario en HTML5</p>
+
+    <!-- Declarar el formulario -->
+    <!-- Debemos poner dentro del formulario todos los inputs que queremos enviar, 
+    por ej: usuario, password, edad y el botón submit para enviar -->
+    <!-- Definir en action a que página queremos enviar los datos -->
+    <form action="clientes/altaCliente.html" method="POST">
+        <label for="nombre">Nombre:</label>
+        <!-- al archivo altaCliente llegará una variable nombre="Pedro" -->
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <!-- el archivo altaCliente.html recibirá una variable apellido="Suarez" -->
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+
+        <br><br>
+        <label for="contrasenia">Contraseña: </label>
+        <input type="password" name="contrasenia" id="contrasenia" placeholder="Debe tener al menos 8 caractéres">
+
+        <br><br>
+        <label for="observaciones">Observaciones: </label>
+        <textarea name="observaciones" id="observaciones" cols="60" rows="6"></textarea>
+
+        <br><br>
+        <label for="provincia">Seleccione una provincia:</label>
+        <select name="provincia" id="provincia">
+            <option value="BUENOS_AIRES">Buenos Aires</option>
+            <option value="MENDOZA">Mendoza</option>
+            <option value="STGO_ESTERO">Santiago del Estero</option>
+        </select>
+
+        <br><br>
+        <label for="mes">Seleccion el mes de viaje:</label>
+        <!-- es buena práctica de programación poner un value en mayuscula, sin espacios y sin 
+        caractéres especiales -->
+        <br>
+        <input type="radio" name="mes" id="" value="ENERO">Enero
+        <br>
+        <input type="radio" name="mes" id="" value="FEBRERO">Febrero
+        <br>
+        <input type="radio" name="mes" id="" value="MARZO">Marzo
+        <br>
+        <input type="radio" name="mes" id="" value="ABRIL">Abril
+        <br>
+        <input type="radio" name="mes" id="" value="MAYO">Mayo
+        <br>
+        <input type="radio" name="mes" id="" value="JUNIO">Junio
+        <br>
+        <input type="radio" name="mes" id="" value="JULIO">Julio
+        <br>
+        <input type="radio" name="mes" id="" value="AGOSTO">Agosto
+        <br>
+        <input type="radio" name="mes" id="" value="SETIEMBRE">Setiembre
+        <br>
+        <input type="radio" name="mes" id="" value="OCTUBRE">Octubre
+        <br>
+        <input type="radio" name="mes" id="" value="NOVIEMBRE">Noviembre
+        <br>
+        <input type="radio" name="mes" id="" value="DICIEMBRE">Diciembre
+
+        <br><br>
+        <label for="mascotas">Con que mascotas viajará:</label>
+        <br>
+        <input type="checkbox" name="mascota1" id="" value="PERRO">Perro
+        <br>
+        <input type="checkbox" name="mascota2" id="" value="GATO">Gato 
+        <br>
+        <input type="checkbox" name="mascota3" id="" value="VIBORA">Vibora
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </form>
+    
+</body>
+</html>

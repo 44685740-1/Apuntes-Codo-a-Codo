@@ -1,0 +1,36 @@
+
+/* primera linea del parrafo */
+p::first-line {
+    background-color: yellow;;
+}
+
+/* primera letra del parrafo como en los libros */
+p::first-letter {
+    font-size: 2rem;
+}
+
+/* agrega contenido antes de que empize el h4, hay que tener en cuenta que ese contenido no es html por lo tanto no se puede seleccionar para modificar con estilo css */
+h4::before {
+    content: "Hacer esto hoy: ";
+    background-color: lightcoral;
+}
+
+/* este es lo mismo que el anterior pero es despues */
+h5::after {
+    content: "  -  (Alicia en el país de las maravillas - 1912)";
+    font-style: italic;
+    font-size: .5rem;
+}
+
+/* el selection es como si fuera un resaltador para el usuario */
+::selection {
+    background-color: #00f;
+}
+
+/* primera letra dentro de otra calse .texto */
+.texto::first-letter {
+    font-size: 2rem;
+    background-color: lightcoral;
+}
+
+/* no solo se puede agregar texto, tambien se pueden agregar otros elementos para generar diferentes efectos */

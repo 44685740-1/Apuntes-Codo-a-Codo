@@ -1,0 +1,31 @@
+p {
+    color: blue;
+    text-align: right;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+a {
+    color: blue;
+    text-align: center;
+}
+
+.textAlerta {
+    background-color: red;
+    color: black;
+    text-align: center;
+}
+
+.textoAdvertencia {
+    background-color: coral;
+    color: black;
+    text-align: center;
+}

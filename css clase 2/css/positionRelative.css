@@ -1,0 +1,25 @@
+.caja {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #07f;
+    display: inline-block;
+    text-align: bottom;
+    padding: auto;
+    position: relative;
+    z-index: 10;
+}
+/* position relative superpone los elementos, depende de cual z index sea mayor */
+#dos{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #000;
+    display: inline-block;
+    text-align: bottom;
+    position: relative;
+    top: 20px;
+    left: -40px;
+}

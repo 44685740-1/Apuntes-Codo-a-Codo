@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidad 2 - Clase 1 - Formularios</title>
+</head>
+
+<body>
+    <!-- declaración del formulario -->
+    <form action="clientes/altaCliente.html" method="GET">
+        <!-- input text -->
+        <label for="nombre">Usuario: </label>
+        <input type="text" id="usuario" name="usuario" >
+
+        <!-- input password -->
+        <br><br>
+        <label for="constrasenia">Contraseña: </label>
+        <input type="password" id="constrasenia" name="constrasenia" >
+        
+        <!-- input textarea -->
+        <br><br>
+        <label for="observaciones">Observaciones</label>
+        <textarea id="observaciones" name="observaciones" cols="50" rows="4"></textarea>
+
+        <!-- select -->
+        <br><br>
+        <label>Selecione una provincia</label>
+        <select name="provincia">
+            <option value="BuenosAires">Buenos Aires</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="StgoEstero">Santiago del Estero</option>
+        </select>
+
+        <!-- input radio -->
+        <br><br>
+        <label>Seleccione el mes:</label>
+        <br>
+        <input type="radio" name="mes" value="ENERO">Enero 
+        <br>
+        <input type="radio" name="mes" value="FEBRERO">Febrero
+        <br>
+        <input type="radio" name="mes" value="MARZO">Marzo
+
+        <!-- input checkbox -->
+        <br><br>
+        <label for="">Seleccione sus mascotas:</label>
+        <br>
+        <input type="checkbox" name="mascota1" value="PERROS">Perro
+        <br>
+        <input type="checkbox" name="mascota2" value="GATO">Gato
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>    
+
+    <br><br><br>
+    <form action="mailto:santos.sanchez@bue.edu.ar" method="POST">
+        <br>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" >
+
+        <br>
+        <label for="email">E-mail: </label>
+        <input type="text" id="email" name="email" >
+
+		<br><br>
+        <label>Frecuencia de los viajes</label>
+		<br>
+		<select name="utilizacion">
+			<option value="1">Varias veces al día</option>
+			<option value="2">Una vez al día</option>
+			<option value="3">Varias veces a la semana</option>
+			<option value="4">Varias veces al mes</option>
+		</select>
+
+		<br><br><br>
+		<input type="submit" value="Enviar formulario">		
+        <input type="reset" value="Borrar todo">        
+    </form>
+
+    
+
+
+</body>
+
+</html>

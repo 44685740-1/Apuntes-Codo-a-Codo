@@ -1,0 +1,15 @@
+html {
+    font-size: 12px;
+}
+
+.paddingEm {
+    font-size: 20px;
+    padding: 4em; /* 20px * 4 = 80px*/
+    border: 2px solid;
+}
+
+.paddingRem {
+    /* font-size: 20px; */
+    padding: 2rem; /* 12px * 2 = 24px*/
+    border: 2px solid;
+}

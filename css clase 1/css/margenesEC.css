@@ -1,0 +1,11 @@
+.margenPequeño {
+    margin: 50px;
+    background-color: lightblue;
+    width: 50%;
+}
+
+.margenGrande {
+    margin: 10px 30px 10px 5px;
+    background-color: lightblue;
+    width: 50%;
+}

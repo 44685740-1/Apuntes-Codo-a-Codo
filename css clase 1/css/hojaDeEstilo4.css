@@ -1,0 +1,41 @@
+body {
+    background-color: lightblue;
+}
+
+p {
+    color: red;
+}
+
+ul {
+    color: blue;
+}
+
+.textoRojo {
+    color: red;
+}
+
+.textoVerde {
+    color: green;
+}
+
+.txtTitulo {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.txtSubtitulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.txtNormal {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#publicidad {
+    background-color: red;
+    text-align: right;
+    font-size: 1.5rem;
+}

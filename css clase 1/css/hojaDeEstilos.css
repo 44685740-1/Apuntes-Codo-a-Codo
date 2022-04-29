@@ -1,0 +1,32 @@
+body {
+    background-color: bisque;
+    font-size: larger;
+    color: blue;
+}
+
+h4 {
+    color: lightgreen;
+    background-color: lightpink;
+}
+
+.textoAzul {
+    color: blue;
+}
+
+.fondoRojo {
+    background-color: red;
+}
+
+.fuenteChica {
+    font-size: small;
+}
+
+#fondoAzul {
+    background-color: blue;
+}
+
+.margenChico {
+    margin: 20px 0px 0px 120px;
+    background-color: yellow;
+    width: 66%;
+}

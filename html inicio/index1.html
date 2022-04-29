@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Clase 2</title>
+</head>
+<body>
+    <!-- tr*4 para poder poner 4 tablas de una vez -->
+    <!-- control + llave te hace un comentario -->
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <!-- x elevado al cuadrado -->
+    x <sup>2</sup>
+    <!-- strang es lo mismo que el b -->
+    <strong>Texto en negrita</strong>
+    <!-- subrrayado con u -->
+    <u>subrrayado </u>
+    <!-- se puede pulsar alt + click para escribir en varios lugares al mismo tiempo -->
+    <!-- colspan para juntar y poner al lado dos celdas de diferentes tablas -->
+    <tr colspan="2">
+        hola
+    </tr>
+    <tr>
+        como estas 
+    </tr>
+    <br>
+    <input type="date" name="" id="">
+    <select name="provincia" id="prov">
+        <option value="1">Buenos Aires</option>
+        <option value="2">Mendoza</option>
+        <option value="3">Tierra del fuego</option>
+        <option value="4">misiones</option>
+    </select>
+    <!-- (br>input[type="radio"][name="mes"][id="$"]{Enetro})*12 -->
+    <!-- hack: para saber el valor de una contraseña que esta gusrdada se puede inspeccionar y cambiar el type password por un type text y se muestra en pantalla -->
+    <!-- control + espacio barra para que te muestre que hace y apretar enter -->
+    
+    <br><input type="radio" name="mes" id="1">Enero</input></br><br><input type="radio" name="mes" id="2">Diciembre</input></br><br><input type="radio" name="mes" id="3">Febrero</input></br><br><input type="radio" name="mes" id="4">Abril</input></br><br><input type="radio" name="mes" id="5">Marzo</input></br><br><input type="radio" name="mes" id="6">mayo</input></br><br><input type="radio" name="mes" id="7">junio</input></br><br><input type="radio" name="mes" id="8">julio</input></br><br><input type="radio" name="mes" id="9">agosto</input></br><br><input type="radio" name="mes" id="10">septiembre</input></br><br><input type="radio" name="mes" id="11">octubre</input></br><br><input type="radio" name="mes" id="12">Noviembre</input></br>
+
+    <!-- patrones: son pastrones que nos sirven para que el usurio deje de mandar infotmacion al servidor que no es la solicitada y que en cambia la corrija como se le es indica y envie la respuesta correcta-->
+    <form action="/action_page.php">
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+        <input type="submit">
+      </form>
+
+      <!-- div ocupa todo el ancho y el span solo una porcion que el texto ocupa en viewport-->
+      <div>
+          <span style="color: aqua;">lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat sunt quaerat asperiores earum harum iure enim distinctio ratione officiis. Iste autem doloribus est, aliquid corporis amet accusamus quam deleniti!
+      </div>
+
+      <!-- iframe se suele usar con google maps pero se puede utilizar con cualquier otra pagina web, insertado directamente de google maps copiado, cambiando el with y height (se llama pagina embeded o enbebida)-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2051708187364!2d-58.450631085159095!3d-34.5736747634154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c3a86d6b93%3A0xd1f5211ff864106!2sClub%20Deportivo%20y%20Social%20Colegiales!5e0!3m2!1ses!2sar!4v1647379539674!5m2!1ses!2sar" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      
+    <a href="https://wa.me/5491122357764?text=este es mi mensaje xd">ws</a>
+    <a href="mailto:ahuitzcaracciolo@gmail.com">link para enviar mail</a>
+
+    <!-- emmet abreviacion (usar control + espacio) li*10  ol>li*10{provedore}  ol>li*5class.textoVerde{clientes verdes} ol>li*5{cliente $}   ol>li*5.clasePrueba{usuario}-->
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <br>
+    <ol>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li>
+        <li>provedore</li> 
+        <li>provedore</li>
+    </ol>
+    <br>
+    <ol>
+        <li>cliente 1</li>
+        <li>cliente 2</li>
+        <li>cliente 3</li>
+        <li>cliente 4</li>
+        <li>cliente 5</li>
+    </ol>
+    <br>
+    <ol>
+        <li class="clasePrueba">usuario</li>
+        <li class="clasePrueba">usuario</li>
+        <li class="clasePrueba">usuario</li>
+        <li class="clasePrueba">usuario</li>
+        <li class="clasePrueba">usuario</li>
+    </ol>
+
+    div.contendor*3>div.hijo{texto $}
+    <!-- clases de padre e hijo con cajas -->
+    <div class="contendor">
+        <div class="hijo">texto 1</div>
+    </div>
+    <div class="contendor">
+        <div class="hijo">texto 2</div>
+    </div>
+    <div class="contendor">
+        <div class="hijo">texto 3</div>
+    </div>
+
+    div.contenedor{texto1}>div.hijo{texto 2}>div.segundo{texto 3}
+    <!-- con tres hijos -->
+    <div class="contenedor">texto1
+        <div class="hijo">texto 2
+            <div class="segundo">texto 3</div>
+        </div>
+    </div>
+    <!-- https://docs.emmet.io/cheat-sheet/
+     pagina web con todos los atajos emmet -->
+</body>
+</html>
