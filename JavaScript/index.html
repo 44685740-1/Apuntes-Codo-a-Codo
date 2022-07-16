@@ -9,9 +9,24 @@
     <title>Practica JavaSacript 1</title>
 </head>
 <body>
+    <!-- ejemplo de eventos -->
     <div onmouseover="CambiarColor()" onmouseleave="VueltaColor()" class="contenedor" id="OnMouseColor"> Esto cambia de color con JS</div>
+    <br>
+    <span class="contenedor" onclick="imprimir();">Imprimir Página</span>
 
+    <!-- ejemplo de suma y resta -->
+    <!-- hay que usar alt + 96 para las comillas que te permiten usar el $ y que imprima las variables -->
+    
+    <p>suma de numeros</p>
+    <input type="number" name="" id="a">
+    <br><br>
+    <input type="number" name="" id="b">
+    <button onclick="sumar()">sumar</button>
+    <br><br>
+    <p>Resultado:
+    <span id="ResultadoSuma">El resultado de la suma es: </span>
 
+    </p>
     <script src="js/app.js"></script>
 </body>
 </html>
